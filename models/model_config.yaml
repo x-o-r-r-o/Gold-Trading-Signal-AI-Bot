@@ -1,0 +1,76 @@
+version: 1
+model:
+  name: "pytorch_mlp_signal"
+  framework: "pytorch"
+  # Must match the number of features used in feature_builder.py
+  input_dim: 14
+  # Hidden layer sizes – must match what you use when building the model
+  hidden_layers: [64, 32]
+  # 3 classes: SELL, HOLD, BUY
+  output_dim: 3
+  activation: "relu"
+  # Path to the PyTorch state_dict (created by the script below)
+  state_dict_path: "models/signal_model.pt"
+  # Default device can be overridden by CLI/ENV
+  default_device: "cpu"
+
+features:
+  # Order MUST match feature_builder.build_feature_dict keys and the training script
+  order:
+    - price
+    - sma20_over_price
+    - ema50_over_price
+    - rsi14
+    - macd_hist
+    - atr14_over_price
+    - volatility20_over_price
+    - ma_cross_bullish
+    - trend_slope_over_price
+    - news_sentiment
+    - num_news_items
+    - num_high_impact_pos
+    - num_high_impact_neg
+    - macro_flag
+
+  # For now, we disable normalization. When you train a real model, update this.
+  normalization:
+    scheme: "none"
+    mean: {}
+    std: {}
+
+classes:
+  # Integer index → label string
+  index_to_label:
+    "0": "SELL"
+    "1": "HOLD"
+    "2": "BUY"
+
+  # Label string → integer index
+  label_to_index:
+    SELL: 0
+    HOLD: 1
+    BUY: 2
+
+  # Map label to score in [-1, 1] for blending with rule-based score
+  label_to_score:
+    SELL: -1.0
+    HOLD: 0.0
+    BUY: 1.0
+
+training_info:
+  # Placeholder metadata. Replace when you train a real model.
+  dataset_name: "dummy_placeholder"
+  target_horizon_days: 1
+  buy_threshold: 0.003
+  sell_threshold: -0.003
+  train_start: "2000-01-01"
+  train_end: "2000-01-02"
+  val_start: "2000-01-03"
+  val_end: "2000-01-04"
+  test_start: "2000-01-05"
+  test_end: "2000-01-06"
+  metrics:
+    val_accuracy: 0.33
+    val_f1_macro: 0.33
+    test_accuracy: 0.33
+    test_f1_macro: 0.33

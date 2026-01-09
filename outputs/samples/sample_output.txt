@@ -1,0 +1,11 @@
+Final signal: BUY (confidence 72%)
+Score: +0.48
+Price: 1960.5
+
+Top reasons:
+- Technical bullish: 20-day SMA crossed above 50 day EMA; RSI 58 indicates positive momentum.
+- News: Multiple high-impact sources (Reuters/Bloomberg) reported ETF inflows and weaker USD over last 48h.
+- Macro: Fed commentary reduced hike expectations; CPI prints lower than feared.
+
+Suggested action: Enter partial long (0.5 standardized units), full confirmation if daily close > 1975. SL 1940, TP 2010.
+If news and technicals conflict and score near 0, recommended action: STAY OUT until next daily close or clearer macro release (e.g., CPI or Fed minutes).
