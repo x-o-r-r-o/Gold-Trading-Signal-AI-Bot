@@ -31,69 +31,69 @@ It outputs:
 
 **Table of Contents**
 
-1.  [[Features]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#features)
+1.  [[Features]](#features)
 
 2.  [[Pipeline
-    Flowchart]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#pipeline-flowchart)
+    Flowchart]](#pipeline-flowchart)
 
 3.  [[Detailed Pipeline
-    Steps]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#detailed-pipeline-steps)
+    Steps]](#detailed-pipeline-steps)
 
 4.  [[APIs and External
-    Services]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#apis-and-external-services)
+    Services]](#apis-and-external-services)
 
-5.  [[Installation]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#installation)
+5.  [[Installation]](#installation)
 
-6.  [[Configuration]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#configuration)
+6.  [[Configuration]](#configuration)
 
 7.  [[Running the
-    Bot]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#running-the-bot)
+    Bot]](#running-the-bot)
 
     - [[Core CLI
-      Flags]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#core-cli-flags)
+      Flags]](#core-cli-flags)
 
     - [[Rule-Based vs ML
-      Signal]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#rule-based-vs-ml-signal)
+      Signal]](#rule-based-vs-ml-signal)
 
     - [[Proxy
-      Options]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#proxy-options)
+      Options]](#proxy-options)
 
     - [[Prompt Refinement
-      Options]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#prompt-refinement-options)
+      Options]](#prompt-refinement-options)
 
-8.  [[Outputs]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#outputs)
+8.  [[Outputs]](#outputs)
 
 9.  [[Training the ML
-    System]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#training-the-ml-system)
+    System]](#training-the-ml-system)
 
     - [[Feature
-      Set]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#feature-set)
+      Set]](#feature-set)
 
     - [[Labeling
-      Scheme]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#labeling-scheme)
+      Scheme]](#labeling-scheme)
 
     - [[Training
-      Workflow]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#training-workflow)
+      Workflow]](#training-workflow)
 
     - [[Saving the Model and
-      Config]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#saving-the-model-and-config)
+      Config]](#saving-the-model-and-config)
 
 10. [[Running with
-    Docker]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#running-with-docker)
+    Docker]](#running-with-docker)
 
     - [[Building the
-      Image]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#building-the-image)
+      Image]](#building-the-image)
 
     - [[Running the
-      Container]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#running-the-container)
+      Container]](#running-the-container)
 
 11. [[Scheduling the
-    Bot]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#scheduling-the-bot)
+    Bot]](#scheduling-the-bot)
 
-12. [[Testing]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#testing)
+12. [[Testing]](#testing)
 
 13. [[Security and
-    Disclaimers]{.underline}](https://www.taskade.com/d/ioJMVKnRZ9a41vyi#security-and-disclaimers)
+    Disclaimers]](#security-and-disclaimers)
 
 **Features**
 
